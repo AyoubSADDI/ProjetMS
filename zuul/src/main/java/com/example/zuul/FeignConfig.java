@@ -1,4 +1,4 @@
-package com.esprit.gateway.communication;
+package com.example.zuul;
 
 import org.springframework.context.annotation.Configuration;
 
@@ -8,6 +8,6 @@ import feign.auth.BasicAuthRequestInterceptor;
 public class FeignConfig {
 	
 	public BasicAuthRequestInterceptor mBasicAuthRequestInterceptor() {
-		return new BasicAuthRequestInterceptor("user", "password");
+		return new BasicAuthRequestInterceptor("user", "user");
 	}
 }
